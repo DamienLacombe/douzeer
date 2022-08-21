@@ -38,7 +38,7 @@ export function getSongs(url) {
         url : url
     }
 
-    return fetch("http://localhost:5000/api/nocors/", {
+    return fetch(" https://douzer-api.herokuapp.com/api/nocors/", {
         headers: {
                 'Accept': 'application/json',
                 'Content-Type': 'application/json'
