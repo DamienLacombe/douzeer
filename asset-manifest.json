@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "//damienlacombe.github.io/douzeer/static/css/main.02484a87.css",
+    "main.js": "//damienlacombe.github.io/douzeer/static/js/main.43f4cbb6.js",
+    "index.html": "//damienlacombe.github.io/douzeer/index.html",
+    "main.02484a87.css.map": "//damienlacombe.github.io/douzeer/static/css/main.02484a87.css.map",
+    "main.43f4cbb6.js.map": "//damienlacombe.github.io/douzeer/static/js/main.43f4cbb6.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.02484a87.css",
+    "static/js/main.43f4cbb6.js"
+  ]
+}
