@@ -1,0 +1,38 @@
+{id: 99472148, readable: true, title: 'The Hum (Radio Edit)', title_short: 'The Hum (Radio Edit)', title_version: '', …}
+album:
+    cover: "https://api.deezer.com/album/10185520/image"
+    cover_big: "https://e-cdns-images.dzcdn.net/images/cover/268e685c22da0021db624eb461d98523/500x500-000000-80-0-0.jpg"
+    cover_medium: "https://e-cdns-images.dzcdn.net/images/cover/268e685c22da0021db624eb461d98523/250x250-000000-80-0-0.jpg"
+    cover_small: "https://e-cdns-images.dzcdn.net/images/cover/268e685c22da0021db624eb461d98523/56x56-000000-80-0-0.jpg"
+    cover_xl: "https://e-cdns-images.dzcdn.net/images/cover/268e685c22da0021db624eb461d98523/1000x1000-000000-80-0-0.jpg"
+    id: 1018552024eb461d98523"
+    title: "The Hum"
+    md5_image: "268e685c22da0021db6
+    tracklist: "https://api.deezer.com/album/10185520/tracks"
+    type: "album"
+[[Prototype]]: Object
+artist:
+    id: 262271
+    link: "https://www.deezer.com/artist/262271"
+    name: "Dimitri Vegas & Like Mike"
+    picture: "https://api.deezer.com/artist/262271/image"
+    picture_big: "https://e-cdns-images.dzcdn.net/images/artist/4f8c9095b35ae79c8f8c236c0f6a13c5/500x500-000000-80-0-0.jpg"
+    picture_medium: "https://e-cdns-images.dzcdn.net/images/artist/4f8c9095b35ae79c8f8c236c0f6a13c5/250x250-000000-80-0-0.jpg"
+    picture_small: "https://e-cdns-images.dzcdn.net/images/artist/4f8c9095b35ae79c8f8c236c0f6a13c5/56x56-000000-80-0-0.jpg"
+    picture_xl: "https://e-cdns-images.dzcdn.net/images/artist/4f8c9095b35ae79c8f8c236c0f6a13c5/1000x1000-000000-80-0-0.jpg"
+    tracklist: "https://api.deezer.com/artist/262271/top?limit=50"
+    type: "artist"
+[[Prototype]]: Object
+duration: 211
+explicit_content_cover: 2
+explicit_content_lyrics: 0
+explicit_lyrics: false
+id: 99472148
+link: "https://www.deezer.com/track/99472148"
+md5_image: "268e685c22da0021db624eb461d98523"
+preview: "https://cdns-preview-3.dzcdn.net/stream/c-3e91692abbc804748aa77ea3d06ba26c-1.mp3"
+rank: 599716
+readable: true
+title: "The Hum (Radio Edit)"
+title_short: "The Hum (Radio Edit)"
+title_version: ""
