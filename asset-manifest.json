@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "//damienlacombe.github.io/douzeer/static/css/main.02484a87.css",
-    "main.js": "//damienlacombe.github.io/douzeer/static/js/main.b5e68c5c.js",
-    "index.html": "//damienlacombe.github.io/douzeer/index.html",
-    "main.02484a87.css.map": "//damienlacombe.github.io/douzeer/static/css/main.02484a87.css.map",
-    "main.b5e68c5c.js.map": "//damienlacombe.github.io/douzeer/static/js/main.b5e68c5c.js.map"
+    "main.css": "/douzeer/static/css/main.b841847d.css",
+    "main.js": "/douzeer/static/js/main.81e640d6.js",
+    "index.html": "/douzeer/index.html",
+    "main.b841847d.css.map": "/douzeer/static/css/main.b841847d.css.map",
+    "main.81e640d6.js.map": "/douzeer/static/js/main.81e640d6.js.map"
   },
   "entrypoints": [
-    "static/css/main.02484a87.css",
-    "static/js/main.b5e68c5c.js"
+    "static/css/main.b841847d.css",
+    "static/js/main.81e640d6.js"
   ]
 }
