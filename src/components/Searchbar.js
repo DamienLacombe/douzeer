@@ -1,10 +1,10 @@
 import React, { useState } from 'react'
 import { getSongs } from '../utils/apiFunction'
-
+import { slide } from '../utils/sliderFunction'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faSearch } from '@fortawesome/free-solid-svg-icons'
 
-const Searchbar = ({setSongs}) => {
+const Searchbar = ({setSongs, setNbrSlide}) => {
 
     const [title, setTitle] = useState("")
 
@@ -18,13 +18,14 @@ const Searchbar = ({setSongs}) => {
 
 
     return (
-        <form action="" onSubmit={(e) => searchSongs(e)}>
+        <form action="" onSubmit={(e) =>  {
+            searchSongs(e)
+            setNbrSlide(0)
+        
+        }}>
             <div>
                 <input onChange={(e) => setTitle(e.target.value)} type="text" />
-                <button type='submit' onClick={() => {
-                    const nav = document.querySelector("nav")
-                    nav?.classList.add("charged")
-                }}><FontAwesomeIcon icon={faSearch}/></button>
+                <button type='submit'><FontAwesomeIcon icon={faSearch} /></button>
             </div>
         </form>
     )

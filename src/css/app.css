@@ -1,9 +1,21 @@
 body {
-    
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     background-color: #3c3c3c;
     overflow-x: hidden;
     transition: .4s;
+    min-height: 100vh;
 }
+
+.App {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 100vh;
+    flex-basis: auto;
+}
+
 header {
     display: flex;
     flex-direction: column;
@@ -17,7 +29,8 @@ header {
 form {
     display: flex;
     justify-content: center;
-    width: 100%;
+    width: 90%;
+    margin: auto;
     padding: 20px 0px;
     
 }
@@ -28,6 +41,7 @@ input {
     padding: 8px;
     color: #d0d0d0;
     font-size: 1.1rem;
+    
 }
 
 form div {
@@ -66,7 +80,8 @@ form button {
     display: flex; 
     align-items: center;
     justify-content: center;
-    min-width: 320px;
+    
+    
     padding: 20px 0;
 }
 
@@ -78,6 +93,14 @@ form button {
     height: 65px;
     transition: .4s;
     cursor: pointer;
+
+}
+
+.song-card:hover {
+    filter: drop-shadow(0px 0px 4px #ffffff);
+    backface-visibility: hidden;
+    transform: translateZ(0);
+    -webkit-font-smoothing: subpixel-antialiased;
 }
 
 nav svg {
@@ -89,16 +112,26 @@ nav svg {
 
 .arrowright {
     right: 6px;
-    top: 50%;
     transform: translateY(-50%);
-    cursor: pointer
+    cursor: pointer;
+    padding: 6px 10px;
+    border-radius: 15px 15px 0 0;
+    background-color: #252525;
+    color: #d0d0d0;
+    bottom: -1.2rem ;
+    box-shadow: #000000 0px 0px 5px;
 }
 
 .arrowleft {
     left: 6px;
-    top: 50%;
     transform: translateY(-50%);
     cursor: pointer;
+    padding: 6px 10px;
+    border-radius: 15px 15px 0 0;
+    background-color: #252525;
+    color: #d0d0d0;
+    bottom: -1.2rem ;
+    box-shadow: #000000 0px 0px 5px;
 }
 
 svg {
@@ -107,6 +140,7 @@ svg {
 
 .arrowleft:hover, .arrowright:hover {
     transform: scale(0.9) translateY(-50%);
+
     
 }
 
@@ -314,7 +348,11 @@ svg:hover {
     filter: drop-shadow(0px -2px 5px rgb(50, 50, 50));
 }
 main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     position: relative;
+    flex-grow: 2;
 }
 .main-player svg {
     width: 30px;
@@ -411,7 +449,7 @@ progress::-webkit-progress-bar {
     font-size: 1.5rem;
     font-weight: 700;
     text-align: center;
-    margin-top: 35vh;
+   
 }
 
 .translate {

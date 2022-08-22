@@ -1,4 +1,4 @@
-import {useState } from "react";
+import {useEffect, useState } from "react";
 import Searchbar from "./components/Searchbar";
 import Slider from "./components/Slider";
 import Lecteur from "./components/Lecteur";
@@ -15,12 +15,16 @@ function App() {
     const [changeByReader, setChangeByReader] = useState(false)
     const [chargedLecteur, setChargedLecteur] = useState(false)
 
-    
+    useEffect(() => {
+      const nav = document.querySelector("nav")
+      nav?.classList.add("charged")
+    }, [songs]) 
+
     return (
       <div className="App">
         <header className="App-header">
-            <Searchbar setSongs={setSongs}/>
-            <Slider songs={songs} setSongInfo={setSongInfo} nbrSlide={nbrSlide} setNbrSlide={setNbrSlide} changeByReader={changeByReader} setChangeByReader={setChangeByReader} setChargedLecteur={setChargedLecteur}/> 
+            <Searchbar setSongs={setSongs} setNbrSlide={setNbrSlide}/>
+            {songs !== undefined && <Slider songs={songs} setSongInfo={setSongInfo} nbrSlide={nbrSlide} setNbrSlide={setNbrSlide} changeByReader={changeByReader} setChangeByReader={setChangeByReader} setChargedLecteur={setChargedLecteur}/> }
         </header>
         <main>
             {

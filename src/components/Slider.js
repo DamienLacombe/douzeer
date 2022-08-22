@@ -17,7 +17,7 @@ const Slider = ({songs, setSongInfo, nbrSlide, setNbrSlide, changeByReader, setC
   
   useEffect(() => {
     const li = document.querySelectorAll(".slider ul li");
-
+    
       if (window.innerWidth < 640) {
           li.forEach(li => {
               li.style.minWidth = window.innerWidth  + "px"
@@ -26,11 +26,11 @@ const Slider = ({songs, setSongInfo, nbrSlide, setNbrSlide, changeByReader, setC
           li.forEach(li => {
               li.style.minWidth = window.innerWidth / 2 + "px"
           })
-      } else if (window.innerWidth > 960 && window.innerWidth < 1280) {
+      } else if (window.innerWidth > 960 && window.innerWidth <= 1280) {
           li.forEach(li => {
               li.style.minWidth = window.innerWidth / 3 + "px"
           })
-      } else if (window.innerWidth > 1280 && window.innerWidth < 1600 ) {
+      } else if (window.innerWidth >= 1280 && window.innerWidth < 1600 ) {
           li.forEach(li => {
               li.style.minWidth = window.innerWidth / 3 + "px"
           })
@@ -39,9 +39,10 @@ const Slider = ({songs, setSongInfo, nbrSlide, setNbrSlide, changeByReader, setC
               li.style.minWidth = window.innerWidth / 4 + "px"
           })
       }
+      slide(nbrSlide);
   }, [])
 
-  window.addEventListener("resize", () => {
+  window.addEventListener("resize" , () => {
       const li = document.querySelectorAll(".slider ul li");
 
       if (window.innerWidth < 640) {
@@ -85,7 +86,7 @@ const Slider = ({songs, setSongInfo, nbrSlide, setNbrSlide, changeByReader, setC
         {nbrSlide < 25 && <FontAwesomeIcon className='arrowright' icon={faArrowRight} onClick={() => {
             setChangeByReader(false)
             setNbrSlide(nbrSlide + 1)}
-        } />}
+        }/>}
     </nav>
   )
 }

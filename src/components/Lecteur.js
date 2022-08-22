@@ -27,6 +27,12 @@ const Lecteur = ({songInfo, nbrSlide, setNbrSlide, setChangeByReader}) => {
                 bar.classList.add("animate")
            })
         }, 1);
+        setTimeout(() => {
+           const bars =  document.querySelectorAll(".bar");
+           bars.forEach(bar => {
+                bar.classList.add("animate")
+           })
+        }, 300);
 
     }, [])
 
@@ -113,8 +119,12 @@ const Lecteur = ({songInfo, nbrSlide, setNbrSlide, setChangeByReader}) => {
                         <FontAwesomeIcon icon={faAngleDoubleLeft} onClick={() => {
                             const currentSong = document.querySelector(".active") 
                             setChangeByReader(true)
-                            resetActiveItem(document.querySelector(`[data-index = "${parseInt(currentSong.getAttribute("data-index")) - 1}"]`))
-                            setNbrSlide(nbrSlide - 1)
+                            if (nbrSlide > 0) {
+                                
+                                resetActiveItem(document.querySelector(`[data-index = "${parseInt(currentSong?.getAttribute("data-index")) - 1}"]`))
+                                setNbrSlide(nbrSlide - 1)
+                            }
+                            
                         }}/>
                     </div>
                     <div className='icone-container'>
@@ -147,8 +157,11 @@ const Lecteur = ({songInfo, nbrSlide, setNbrSlide, setChangeByReader}) => {
                         <FontAwesomeIcon icon={faAngleDoubleRight} onClick={() => {
                             const currentSong = document.querySelector(".active") 
                             setChangeByReader(true)
-                            resetActiveItem(document.querySelector(`[data-index = "${parseInt(currentSong.getAttribute("data-index")) + 1}"]`))
-                            setNbrSlide(nbrSlide + 1)
+                            if (nbrSlide <= 25) {
+                                
+                                resetActiveItem(document.querySelector(`[data-index = "${parseInt(currentSong?.getAttribute("data-index")) + 1}"]`))
+                                setNbrSlide(nbrSlide + 1)
+                            }
                         }}/>
                     </div>
                 </div>
